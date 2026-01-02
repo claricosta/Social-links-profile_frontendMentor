@@ -1,7 +1,7 @@
 # Frontend Mentor | Social Links Profile
 
 Este é um projeto de **Front-end** desenvolvido como parte de um desafio do **Frontend Mentor**.  
-Sua proposta é desenvolver um **cartão de perfil com links para redes sociais**, com foco em HTML semântico, CSS e responsividade.
+Sua proposta é criar um **cartão de perfil com links para redes sociais**, com foco em HTML semântico, CSS e responsividade.
 
 ## 📸 Screenshot
 
