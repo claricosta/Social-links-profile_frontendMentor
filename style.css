@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #330912;
+    background: linear-gradient(0deg, #2A070F 0%, #4C2432 100%);
+    color: #EDD9E5;
+    text-align: center;
+    min-height: 100vh;
+    /* Flexbox para centralizar o conteúdo */
+    display: flex;
+    flex-direction: column;
+    /* Empilha os itens verticalmente */
+    justify-content: center;
+    /* Centraliza o bloco (cartão + footer) verticalmente */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+.container {
+    background-color: #430E2E;
+    max-width: 400px;
+    /* Define uma largura máxima */
+    margin: 2.5rem auto;
+    /* Adiciona margem no topo/base e centraliza horizontalmente */
+    padding: 1.75rem;
+    /* Adiciona espaço interno */
+    border-radius: 10px;
+}
+
+header {
+    font-family: "Merriweather", serif;
+}
+
+img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.address {
+    color: #C38BAC;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+}
+
+.description {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 1.4rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-family: "Newsreader", serif;
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4C2432;
+    font-family: "Newsreader", serif;
+    color: #EDD9E5;
+    text-decoration: none;
+    padding: 0.8rem 0;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+    background-color: #C38BAC;
+    color: #330912;
+}
+
+footer {
+    font-family: "Merriweather", serif;
+    font-size: 0.8rem;
+}
+
+/* Media Query para dispositivos móveis (telas com até 600px de largura) */
+@media (max-width: 600px) {
+    body {
+        /* Garante que o conteúdo comece mais perto do topo em telas pequenas */
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+
+    .container {
+        /* Reduz a margem vertical e lateral para telas menores */
+        margin: 1rem;
+        /* Reduz o padding interno para dar mais espaço ao conteúdo */
+        padding: 1.5rem;
+        max-width: 100%; /* Permite que o container ocupe a largura disponível */
+    }
+
+    footer {
+        padding: 0 1rem; /* Adiciona espaçamento lateral para o texto não colar nas bordas */
+    }
+}
